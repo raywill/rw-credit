@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {Navbar, Header, Gallery, Divider} from 'amazeui-react'
 import { Link } from 'react-router'
+import CreditHeader from '../components/CreditHeader'
+import CreditFooter from '../components/CreditFooter'
 
 export default class ListPage extends Component {
   render() {
@@ -20,7 +22,6 @@ export default class ListPage extends Component {
       {
         "img": "http://s.amazeui.org/media/i/demos/bing-3.jpg",
         "link": "#/detail/144",
-        "link": "http://s.amazeui.org/media/i/demos/bing-3.jpg",
         "title": "不要太担心 只因为我相信",
         "desc": '💰' + '144'
       },
@@ -51,7 +52,6 @@ export default class ListPage extends Component {
       {
         "img": "http://s.amazeui.org/media/i/demos/bing-3.jpg",
         "link": "#/detail/144",
-        "link": "http://s.amazeui.org/media/i/demos/bing-3.jpg",
         "title": "不要太担心 只因为我相信",
         "desc": '💰' + '144'
       },
@@ -82,7 +82,6 @@ export default class ListPage extends Component {
       {
         "img": "http://s.amazeui.org/media/i/demos/bing-3.jpg",
         "link": "#/detail/144",
-        "link": "http://s.amazeui.org/media/i/demos/bing-3.jpg",
         "title": "不要太担心 只因为我相信",
         "desc": '💰' + '144'
       },
@@ -114,7 +113,6 @@ export default class ListPage extends Component {
       {
         "img": "http://s.amazeui.org/media/i/demos/bing-3.jpg",
         "link": "#/detail/144",
-        "link": "http://s.amazeui.org/media/i/demos/bing-3.jpg",
         "title": "不要太担心 只因为我相信",
         "desc": '💰' + '144'
       },
@@ -129,13 +127,17 @@ export default class ListPage extends Component {
         "link": "#/detail/144",
         "title": "远方 有一个地方 那里种有我们的梦想",
         "desc": '💰' + '144'
-      },
+      }
 
     ];
     return (
-      <div style={{marginBottom: '49px'}}>
-        <Gallery data={shopItemData} />
-        <Link to="detail/123123">GoTo</Link>
+      <div>
+        <CreditHeader />
+        <div style={{marginBottom: '50px'}}>
+          <Gallery data={shopItemData} />
+          <Link to="detail/123123">GoTo</Link>
+        </div>
+        <CreditFooter />
       </div>
     );
   }
