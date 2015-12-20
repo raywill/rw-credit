@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Router, Route, IndexRoute } from 'react-router'
+import { connect, Provider } from 'react-redux'
 
 import ListPage from './ListPage'
 import DetailPage from './DetailPage'
@@ -9,6 +10,7 @@ import AppFramework from './AppFramework'
 export default class CreditApp extends Component {
   render() {
     return (
+      <Provider store={this.props.store}>
       <Router>
         <Route path="/" components={AppFramework}>
           <Route path="list" components={ {content : ListPage} }  />
@@ -18,6 +20,7 @@ export default class CreditApp extends Component {
         </Route>
 
       </Router>
+      </Provider>
     );
   }
 }

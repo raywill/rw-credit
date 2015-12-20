@@ -27,14 +27,17 @@
     "amazeui-react": "^1.0.0-beta2",
     "amazeui-touch": "0.1.0-beta2",
     "babel-runtime": "^5.1.10",
+    "es6-promise": "^3.0.2",
     "history": "^1.13.1",
+    "isomorphic-fetch": "^2.2.0",
     "react": "^0.14.3",
     "react-bootstrap": "^0.28.1",
     "react-dom": "^0.14.3",
     "react-form": "0.0.2",
     "react-redux": "^4.0.0",
     "react-router": "^1.0.1",
-    "redux": "^3.0.4"
+    "redux": "^3.0.4",
+    "redux-router": "^1.0.0-beta5"
   },
   "devDependencies": {
     "babel-core": "^5.6.18",
