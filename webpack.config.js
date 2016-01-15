@@ -47,7 +47,7 @@ var path = require('path');
 module.exports = {
   entry : {
     credit : [
-      'webpack-dev-server/client?http://localhost:4000',
+      'webpack-dev-server/client?http://edu.xiaoheqingting.com:4000',
       'webpack/hot/dev-server',
       './js/index'
     ],

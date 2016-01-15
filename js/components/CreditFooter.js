@@ -5,24 +5,19 @@ export default class CreditFooter extends Component {
   render() {
     let bottomNavData = [
       {
-        title: '客服电话',
-        link: 'tel:13426199122',
-        icon: 'phone'
-      },
-      {
         title: '兑换商品',
         link: '#/list',
-        icon: 'github'
+        icon: 'cube'
       },
       {
-        title: '商品列表',
+        title: '限时活动',
         link: '#/list',
-        icon: 'download'
+        icon: 'clock-o'
       },
       {
-        title: '商品列表',
-        link: '#/list',
-        icon: 'location-arrow'
+        title: '我的兑换',
+        link: '#/cart',
+        icon: 'circle-o'
       }
     ];
     return (

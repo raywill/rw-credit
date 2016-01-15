@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
+import { connect } from 'react-redux'
 import {Panel, Button, Form, Input} from 'amazeui-react'
-import ContactForm from './ContactForm'
+import ContactForm from '../components/ContactForm'
 
 export default class FormPage extends Component {
   render() {
@@ -11,3 +12,10 @@ export default class FormPage extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return state;
+}
+
+
+export default connect(mapStateToProps)(FormPage);
